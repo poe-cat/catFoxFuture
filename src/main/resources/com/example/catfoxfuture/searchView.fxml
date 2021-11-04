@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="1020.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.catfoxfuture.SearchController">
+   <children>
+      <TableView fx:id="tblDataTableView" layoutX="18.0" layoutY="105.0" prefHeight="369.0" prefWidth="982.0">
+        <columns>
+          <TableColumn fx:id="idColumn" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="firstnameColumn" prefWidth="239.0" text="FIRSTNAME" />
+            <TableColumn fx:id="lastnameColumn" prefWidth="243.0" text="LASTNAME" />
+            <TableColumn fx:id="usernameColumn" minWidth="0.0" prefWidth="252.0" text="USERNAME" />
+            <TableColumn fx:id="passwordColumn" prefWidth="172.0" text="PASSWORD" />
+        </columns>
+      </TableView>
+      <Label fx:id="searchLabel" layoutX="49.0" layoutY="50.0" text="Search">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="searchTextField" layoutX="98.0" layoutY="47.0" prefHeight="25.0" prefWidth="558.0" promptText="Keywords..." />
+   </children>
+</Pane>
